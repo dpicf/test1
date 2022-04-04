@@ -1,6 +1,6 @@
 <?php
-$region_ids = trim(filter_var($_POST['region_ids'], FILTER_SANITIZE_STRING));
-$products = trim(filter_var($_POST['site_products'], FILTER_SANITIZE_STRING));
+$region_ids = $_POST['region_ids'];
+$products = ['site_products'];
 
 $site_products = [];
 foreach ($products as $product) {
