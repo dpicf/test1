@@ -1,6 +1,6 @@
 <?php
 $region_ids = $_POST['region_ids'];
-$products = ['site_products'];
+$products = $_POST['site_products'];
 
 $site_products = [];
 foreach ($products as $product) {
